@@ -41,90 +41,88 @@ const Contact = () => {
       setSuccess("Your message has been sent!");
     }
   };
-
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-    <div className="max-w-lg w-full bg-gray-100 p-6 rounded-lg shadow-md mt-8">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Me</h2>
-      {success && <p className="text-green-500 mb-4">{success}</p>}
-      <form onSubmit={handleSubmit}>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 font-medium mb-3"
-            htmlFor="name"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded ${
-              errors.name ? "border-red-500" : "border-gray-300"
-            }`}
-            placeholder="Your Name"
-          />
-          {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-          )}
+    return (
+      <div className="min-h-screen w-screen flex p-16 items-center justify-center bg-gray-100">
+        <div className="max-w-6xl w-full bg-white p-12 rounded-lg shadow-lg">
+          <h2 className="text-4xl font-bold mb-8 text-gray-800">Contact Me</h2>
+          {success && <p className="text-green-500 mb-6 text-lg">{success}</p>}
+          <form onSubmit={handleSubmit}>
+            <div className="mb-8">
+              <label
+                className="block text-gray-700 font-semibold text-lg mb-4"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 text-lg border rounded-lg ${
+                  errors.name ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Your Name"
+              />
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-2">{errors.name}</p>
+              )}
+            </div>
+            <div className="mb-8">
+              <label
+                className="block text-gray-700 font-semibold text-lg mb-4"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 text-lg border rounded-lg ${
+                  errors.email ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Your Email"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+              )}
+            </div>
+            <div className="mb-8">
+              <label
+                className="block text-gray-700 font-semibold text-lg mb-4"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 text-lg border rounded-lg ${
+                  errors.message ? "border-red-500" : "border-gray-300"
+                }`}
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-2">{errors.message}</p>
+              )}
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white py-3 text-lg rounded-lg hover:bg-blue-500"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 font-medium mb-3"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded ${
-              errors.email ? "border-red-500" : "border-gray-300"
-            }`}
-            placeholder="Your Email"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 font-medium mb-3"
-            htmlFor="message"
-          >
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className={`w-full px-3 py-2 border rounded ${
-              errors.message ? "border-red-500" : "border-gray-300"
-            }`}
-            placeholder="Your Message"
-            rows="5"
-          ></textarea>
-          {errors.message && (
-            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-          )}
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-  </div>
-  
-  );
+      </div>
+    );
 };
 
 export default Contact;

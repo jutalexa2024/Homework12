@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <nav className="bg-gray-800 text-white text-4xl py-20 fixed top-0 left-0 w-full z-10 shadow-md">
+    <nav className="bg-gray-800 text-white text-4xl py-20 fixed top-0 left-0 w-screen z-10 shadow-md">
       <div className="max-w-screen-xl flex justify-between ">
         {/* Left Logo */}
         <h1 className="text-4xl font-bold ml-10">
