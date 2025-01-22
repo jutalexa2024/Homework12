@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build tailwindcss -i ./src/app.css -o ./public/style.css --watch ",
+    "build": "vite build tailwindcss ./src/app.css -o ./public/style.css --watch ",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "package_name": "^1.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.3",
