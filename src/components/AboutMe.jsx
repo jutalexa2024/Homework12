@@ -1,5 +1,7 @@
 import React from "react";
 import profilePicture from '../assets/avatar.png';
+import Footer from '../components/Footer';
+
 
 const AboutMe = () => {
   return (

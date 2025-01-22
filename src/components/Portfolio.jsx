@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 
 const Portfolio = () => {
     return (
+
         <div class="min-h-screen bg-gray-100 flex items-center justify-center">
         <p class="text-lg text-gray-800 leading-relaxed max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
           Sociable on as carriage my position weddings raillery consider. Peculiar
@@ -13,6 +15,7 @@ const Portfolio = () => {
           admitting oh mr up as described acuteness propriety moonlight.
         </p>
       </div>
+     
     );
 };
 
