@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 // import Resume from './components/Resume';
 import Header from './components/Header';
-import Footer from './components/Footer';  // Import the Footer component
+import Footer from './components/Footer'; 
 
 const App = () => {
     return (

@@ -35,7 +35,7 @@ const Contact = () => {
       setErrors(validationErrors);
       setSuccess("");
     } else {
-      // Here, you can add functionality to send the data to an API or email service
+      //functionality to send the data to an API or email service
       console.log("Form submitted:", formData);
       setErrors({});
       setFormData({ name: "", email: "", message: "" });

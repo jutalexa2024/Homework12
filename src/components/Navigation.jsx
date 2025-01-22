@@ -3,17 +3,16 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-<nav className="bg-gray-800 text-white text-4xl py-20 fixed top-0 w-full z-10 shadow-md">
-  <div className="max-w-screen-xl mx-10 flex">
-    {/* Left Logo */}
-    <h1 className="text-3xl font-bold ml-10">
+<nav className="bg-gray-800 text-white text-4xl py-5 fixed top-0 w-full z-10 shadow-md">
+  <div className="px-10 flex items-center">
+
+    <h1 className="text-3xl font-bold">
       <NavLink to="/" className="hover:text-blue-400 text-3xl">
         My Portfolio
       </NavLink>
     </h1>
 
-    {/* Right Aligned Navigation Links */}
-    <ul className=" flex list-none space-x-10 ml-auto pr-10">
+    <ul className="flex list-none space-x-10 ml-auto pr-10">
       <li>
         <NavLink
           to="/"
@@ -65,6 +64,7 @@ const Navigation = () => {
     </ul>
   </div>
 </nav>
+
 
   );
 };

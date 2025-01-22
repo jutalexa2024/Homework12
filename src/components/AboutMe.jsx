@@ -1,20 +1,19 @@
 import React from "react";
 import profilePicture from '../assets/avatar.png';
-import Footer from '../components/Footer';
 
 
 const AboutMe = () => {
   return (
     
-<div className="min-h-screen w-screen bg-gray-100 flex items-center justify-center">
+<div className="min-h-screen w-full bg-gray-100 flex items-center justify-center">
   <div className="w-full max-w-9xl mx-6 p-8 bg-white rounded-xl shadow-lg text-center">
-    {/* Avatar */}
+
     <img
       src={profilePicture}
       alt="Avatar"
       className="w-36 h-36 rounded-full mx-auto mb-6"
     />
-    {/* Text */}
+
     <p className="text-3xl text-gray-800 leading-relaxed">
       Sociable on as carriage my position weddings raillery consider. Peculiar
       trifling absolute and wandered vicinity property yet. The and collecting
